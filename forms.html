@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+<body>
+    <fieldset>
+        <legend>LOG IN</legend>
+        <form action="" id="form" method="GET"></form>
+        <label for="saxeli">USERNAME</label>
+        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="username or email" type="text" name="saxeli" id="saxeli" required>
+        <label for="passwordi">PASSWORD</label>
+        <input type="password" name="PASSWORD" id="passwordi" placeholder="Password" required>
+             <a href="./projectGrids.html"><input type="submit" value="LOG IN" id="login" ></a> 
+    </fieldset>
+    
+    <br>
+    <div>
+        <h2>REGISTER HERE</h2>
+        <label for="saxeli1">Name</label>
+        <input type="text" name="saxeli1" id="saxeli1" placeholder="name" required>
+        <label for="gvari">Last Name</label>
+        <input type="text"  name="gvari" id="gvari" placeholder="last name" required>
+        <br>
+        <label for="asaki">Age</label>
+        <input type="number" min="18" max="70" name="asaki" id="asaki" required>
+        <br>
+        <label for="birthday">Date Of Birth</label>
+        <input type="date" name="birthday" id="birthday" required>
+        <label for="gender">Gender:</label>
+        <label for="male" id="male1">Male</label>
+        <input type="radio" id="male" name="gender" >
+        <label for="female" id="female1">Female</label>
+        <input type="radio" id="female" name="gender">
+        
+
+        <h3>Adress</h3>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="georgia">Georgia</option>
+            <option value="us">USA</option>
+            <option value="russia">Russia</option>
+            <option value="other">The Other</option>
+        </select>
+
+        <label for="city">City</label>
+        <select name="city id="city ">
+            <option value="Tbilisi">Tbilisi</option>
+            <option value="Akhaltsikhe">Akhaltsikhe</option>
+            <option value="batumi">Batumi</option>
+            <option value="other">The Other</option>
+        </select>
+
+        <label for="email">Enter Your Email</label>
+        <input type="email" required>
+        <br>
+        <a href="./projectGrids.html"><input type="submit" value="Submit" id="submit"></a>
+    </div>
+
+    
+</body>
+</html>

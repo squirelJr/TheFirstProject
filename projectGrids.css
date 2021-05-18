@@ -1,0 +1,219 @@
+.nav{
+    border: beige 2px solid;
+    height: 60px;
+    align-content: center;
+    display: flex;
+    flex-shrink: 5;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    background-image: url(./wine-theme-ornament-vine-style-260nw-477617893.webp);
+    background-position: center;
+    background-attachment: sticky;
+    opacity: 0.7;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+
+    
+   
+}
+.nav a{
+   border: burlywood 1px solid;
+   height: 30px;
+   
+    font-display: inline-flex;
+   align-items: center;
+    text-decoration-line: none;
+    color:rgb(150, 0, 0);
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    background-color: hsla(118, 100%, 73%, 0.642);
+    position: sticky;
+    
+}
+
+#text{
+    color:white;
+    display: inline-block;
+    position: static;
+    justify-content: center;
+    align-content: center;
+    padding-left: 20vw;
+    margin-top: 200px;
+    font-size: 4em;
+    opacity: 0.7;
+    text-transform: initial;
+    font-style: italic;
+
+}
+.img{
+   margin: 0px;
+   padding: 0px;
+    height: 400px;
+    background-image: url(./grape\ yeard.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+    
+}
+
+.main{
+    display: grid;
+    grid-template:  1fr  1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 100px 100px;
+    background-color: lavender;
+    grid-auto-flow: row ;
+    justify-content: center;
+}
+
+.white{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.side{
+    grid-row-start: 1 ;
+    grid-row-end: span all;
+    border: rgb(145, 135, 5)2px solid;
+    background-color: white;
+    background-image: url(./d97b9518753325.562ceb7ccce78.png);
+  
+}
+
+@media only  screen and(max-width:1000px){
+    .main{
+        grid-gap: 20px 20px;
+
+    }
+    #right{
+        display: none;
+    }
+    #text{
+        font-size: 3em;
+      opacity: 1;
+    }
+    .img{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:765px){
+   .side{
+       display: none;
+   }
+   .img{
+       height: 200px
+   }
+   .main{
+       column-width: 100px;
+       grid-gap: 10px;
+
+   }
+   #text{
+       opacity: 1;
+       color:rgb(167, 10, 10);
+       font-size: 3em;
+   }
+   
+
+}
+#right{
+    grid-row-start: 1;
+    grid-row-end: span all;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border:  rgb(145, 135, 5) 2px solid;
+    background-color: white;
+    background-image: url(./d97b9518753325.562ceb7ccce78.png);
+    
+}
+
+.Red{
+    grid-area: 1/3/2/3;
+}
+
+.rose{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.araki{
+    grid-area: 2 / 3 / 2/3;
+}
+
+.white p, p{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    color: rgb(145, 135, 5) ;
+    font-size: 1.5em;
+    
+    
+}
+.button {
+    display: inline-block;
+    position: relative;
+    align-content: center;
+    margin-left: 110px;
+    background-color: grey;
+    
+    color: rgb(92, 1, 1) ;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: rgb(204, 202, 202);
+    color: rgb(92, 1, 1);
+    
+    font-size: 24px;
+    border-radius: 20px;
+}
+.redimg{
+    background-image: url(./redwine.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.roseimg{
+    background-image: url(./rose.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-position-x: -100px;
+}
+.arakiimg{
+    background-image: url(./araki.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+
+.whiteimg{
+    background-image: url(./white.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position-x: -160px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
